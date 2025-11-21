@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+void swapNums(int*a,int*b){
+int temp =*a;
+*a=*b;
+*b=temp;
+}
+
+
+int main()
+{
+   int x,y;
+   cout<<"enter x";
+   cin>>x;
+    cout<<"enter y";
+   cin>>y;
+  swapNums(&x, &y);
+  cout << x << " " << y;
+
+
+    return 0;
+}
