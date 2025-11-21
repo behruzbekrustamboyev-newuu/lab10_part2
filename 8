@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int cstrLength(char* c) {
+    int length = 0;
+    while (*c != '\0') {
+        length++;
+        c++;
+    }
+    return length;
+}
+
+int main() {
+    char str[1000];
+    cin.getline(str, 1000);
+
+    cout << cstrLength(str);
+    return 0;
+}
